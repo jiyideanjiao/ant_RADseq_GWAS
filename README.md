@@ -20,3 +20,7 @@ samtools sort {id}.bam -o {id}.srt.bam
 picard MarkDuplicates I={id}.srt.bam O={id}.rmd.bam REMOVE_DUPLICATES=true M={id}.txt
 samtools rmdup {id}.srt.bam {id}_nopcr.bam
 ```
+#### call variants
+```
+bcftools mpileup -f <ReferenceGenome> <All file names> | bcftools call --skip-variants indels --variants-only -mv -Oz -o output.vcf.gz
+```
