@@ -33,3 +33,4 @@ vcftools
 bcftools +dosage behavior_filter.vcf > behavior.dosage
 bcftools +dosage chc_filter.vcf > chc.dosage
 ```
+#### estimate kinship file (relatedness)
