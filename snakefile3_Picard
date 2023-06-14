@@ -1,0 +1,11 @@
+OGG, = glob_wildcards("{ogg}.bam")
+THREADS = 1
+
+rule all:
+	input: expand("{ogg}.rmd.bam",ogg=OGG)
+
+rule Picard:
+	input: "{ogg}.bam"
+    output: "{ogg}.rmd.bam"
+    threads: 1
+    shell: "picard MarkDuplicates I={input} O={output} REMOVE_DUPLICATES=true M={wildcards.ogg}_picard.txt"
