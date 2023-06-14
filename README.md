@@ -22,7 +22,8 @@ samtools rmdup {id}.srt.bam {id}_nopcr.bam
 ```
 #### call variants
 ```
-bcftools mpileup -f <ReferenceGenome> <All file names> | bcftools call --skip-variants indels --variants-only -mv -Oz -o output.vcf.gz
+bcftools mpileup -f <ReferenceGenome> <All file names> |
+bcftools call --skip-variants indels --variants-only -mv -Oz -o output.vcf.gz
 ```
 #### filter variants
 ```
@@ -37,4 +38,9 @@ bcftools +dosage chc_filter.vcf > chc.dosage
 ```
 gemma -g behavior.dosage -p behavior_phenotype.txt -gk 1 -o relatedness_behavior
 gemma -g behavior.dosage -p chc_phenotype.txt -gk 1 -o relatedness_chc
+```
+#### run GEMMA
+```
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 3 -k relatedness.txt -lm 4 -o <trait>
+gemma -g ant.dosage -p phenotype.CHCResiduals.txt -n 3 -k relatedness.txt -lm 4 -o <trait>
 ```
