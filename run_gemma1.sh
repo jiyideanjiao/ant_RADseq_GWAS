@@ -1,0 +1,15 @@
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 3 -k relatedness.txt -lm 4 -o Foraging
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 4 -k relatedness.txt -lm 4 -o Aggression
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 5 -k relatedness.txt -lm 4 -o Exploration_Rate
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 6 -k relatedness.txt -lm 4 -o Group_Exploration
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 7 -k relatedness.txt -lm 4 -o Colony_Exploration
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 8 -k relatedness.txt -lm 4 -o Worker_Mass
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 9 -k relatedness.txt -lm 4 -o Gyne_Mass
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 10 -k relatedness.txt -lm 4 -o Male_Mass
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 11 -k relatedness.txt -lm 4 -o Caste_Ratio
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 12 -k relatedness.txt -lm 4 -o Sex_Ratio
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 13 -k relatedness.txt -lm 4 -o Eggs
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 14 -k relatedness.txt -lm 4 -o Brood
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 15 -k relatedness.txt -lm 4 -o Workers
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 16 -k relatedness.txt -lm 4 -o Gynes
+gemma -g ant.dosage -p phenotype.PhenoResiduals.txt -n 17 -k relatedness.txt -lm 4 -o Males
