@@ -6,7 +6,7 @@
 bwa index GCF_013373865.1_ASM1337386v2_genomic.fna
 bwa mem GCF_013373865.1_ASM1337386v2_genomic.fna {input} > {output}
 ```
-#### sam to bam
+#### convert sam file to bam file
 ```
 samtools faidx GCF_013373865.1_ASM1337386v2_genomic.fna
 samtools view -bhS -t GCF_013373865.1_ASM1337386v2_genomic.fna.fai {id}.sam -o {id}.bam
@@ -28,7 +28,7 @@ bcftools mpileup -f <ReferenceGenome> <All file names> | bcftools call --skip-va
 ```
 vcftools 
 ```
-#### convert to dosage
+#### convert variant file to dosage file
 ```
 bcftools +dosage behavior_filter.vcf > behavior.dosage
 bcftools +dosage chc_filter.vcf > chc.dosage
