@@ -1,4 +1,4 @@
-# ant RAD-seq GWAS
+# GWAS | ant RAD-seq
 
 
 #### reads mapping
