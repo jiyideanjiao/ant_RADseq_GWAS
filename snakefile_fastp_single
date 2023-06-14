@@ -1,0 +1,11 @@
+OGG, = glob_wildcards("{ogg}.fastq")
+THREADS = 1
+
+rule all:
+	input: expand("{ogg}_trimmed.fq",ogg=OGG)
+
+rule fastp:
+	input: "{ogg}.fastq"
+	output: "{ogg}_trimmed.fq"
+	threads: 1
+	shell: "fastp -i {input} -o {output}"
