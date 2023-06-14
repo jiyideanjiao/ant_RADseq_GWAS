@@ -1,0 +1,12 @@
+OGG, = glob_wildcards("{ogg}_trimmed.fq")
+
+THREADS = 1
+
+rule all:
+        input: expand("{ogg}.sam",ogg=OGG)
+
+rule mapping:
+        input: "{ogg}_trimmed.fq"
+        output: "{ogg}.sam"
+        threads: 1
+        shell: "bwa mem GCF_013373865.1_ASM1337386v2_genomic.fna {input} > {output}"
