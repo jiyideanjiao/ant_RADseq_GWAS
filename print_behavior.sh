@@ -1,0 +1,15 @@
+awk '{print $2,$6,$8,$9,$10,$11}' Aggression.assoc.txt > Aggression.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Brood.assoc.txt > Brood.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Caste_Ratio.assoc.txt > Caste_Ratio.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Colony_Exploration.assoc.txt > Colony_Exploration.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Eggs.assoc.txt > Eggs.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Exploration_Rate.assoc.txt > Exploration_Rate.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Foraging.assoc.txt > Foraging.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Group_Exploration.assoc.txt > Group_Exploration.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Gyne_Mass.assoc.txt > Gyne_Mass.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Gynes.assoc.txt > Gynes.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Male_Mass.assoc.txt > Male_Mass.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Males.assoc.txt > Males.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Sex_Ratio.assoc.txt > Sex_Ratio.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Worker_Mass.assoc.txt > Worker_Mass.csv
+awk '{print $2,$6,$8,$9,$10,$11}' Workers.assoc.txt > Workers.csv
