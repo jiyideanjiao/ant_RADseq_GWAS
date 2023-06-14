@@ -13,9 +13,10 @@ samtools view -bhS -t GCF_013373865.1_ASM1337386v2_genomic.fna.fai {id}.sam -o {
 ```
 #### sort bam
 ```
-samtools sort {id}.bam -o {id}.sorted.bam
+samtools sort {id}.bam -o {id}.srt.bam
 ```
 #### remove PCR duplication
 ```
-picard MarkDuplicates I={id}.bam O={id}.rmd.bam REMOVE_DUPLICATES=true M={id}.txt
+picard MarkDuplicates I={id}.srt.bam O={id}.rmd.bam REMOVE_DUPLICATES=true M={id}.txt
+samtools rmdup {id}.srt.bam {id}_nopcr.bam
 ```
