@@ -24,3 +24,12 @@ samtools rmdup {id}.srt.bam {id}_nopcr.bam
 ```
 bcftools mpileup -f <ReferenceGenome> <All file names> | bcftools call --skip-variants indels --variants-only -mv -Oz -o output.vcf.gz
 ```
+#### filter variants
+```
+vcftools 
+```
+#### convert to dosage
+```
+bcftools +dosage behavior_filter.vcf > behavior.dosage
+bcftools +dosage chc_filter.vcf > chc.dosage
+```
