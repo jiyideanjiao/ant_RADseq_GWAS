@@ -27,7 +27,7 @@ bcftools call --skip-variants indels --variants-only -mv -Oz -o output.vcf.gz
 ```
 #### filter variants
 ```
-vcftools 
+vcftools --vcf chc.vcf --maf 0.05 --max-alleles 2 --minQ 30 --minDP 5 --recode --stdout > chc_filter.vcf
 ```
 #### convert variant file to dosage file
 ```
