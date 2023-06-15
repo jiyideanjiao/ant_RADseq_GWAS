@@ -1,4 +1,4 @@
-# GWAS | ant Restriction site-associated DNA sequencing (RAD-seq)
+# GWAS | Ant RAD-seq
 
 
 #### reads mapping
