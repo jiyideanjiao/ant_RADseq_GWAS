@@ -37,7 +37,7 @@ bcftools +dosage chc_filter.vcf > chc.dosage
 #### estimate kinship file (relatedness)
 ```
 gemma -g behavior.dosage -p behavior_phenotype.txt -gk 1 -o relatedness_behavior
-gemma -g behavior.dosage -p chc_phenotype.txt -gk 1 -o relatedness_chc
+gemma -g chc.dosage -p chc_phenotype.txt -gk 1 -o relatedness_chc
 ```
 #### run GEMMA
 ```
